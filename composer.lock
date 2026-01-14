@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "35b3266ed30822bfe635f5d8bef0fcaa",
+=======
+    "content-hash": "b06b9bf2894c0132673346a7d29971b6",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
     "packages": [
         {
             "name": "composer/semver",
@@ -85,6 +89,7 @@
         },
         {
             "name": "doctrine/collections",
+<<<<<<< HEAD
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -95,6 +100,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/collections/zipball/9acfeea2e8666536edff3d77c531261c63680160",
                 "reference": "9acfeea2e8666536edff3d77c531261c63680160",
+=======
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/collections.git",
+                "reference": "6108e0cd57d7ef125fb84696346a68860403a25d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/6108e0cd57d7ef125fb84696346a68860403a25d",
+                "reference": "6108e0cd57d7ef125fb84696346a68860403a25d",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 "shasum": ""
             },
             "require": {
@@ -151,7 +168,11 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/collections/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/collections/tree/2.4.0"
+=======
+                "source": "https://github.com/doctrine/collections/tree/2.5.0"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "funding": [
                 {
@@ -167,6 +188,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-10-25T09:18:13+00:00"
         },
         {
@@ -206,13 +228,52 @@
                 "squizlabs/php_codesniffer": "4.0.0",
                 "symfony/cache": "^5.4|^6.0|^7.0|^8.0",
                 "symfony/console": "^4.4|^5.4|^6.0|^7.0|^8.0"
+=======
+            "time": "2026-01-07T17:26:56+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "4.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "3d544473fb93f5c25b483ea4f4ce99f8c4d9d44c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/3d544473fb93f5c25b483ea4f4ce99f8c4d9d44c",
+                "reference": "3d544473fb93f5c25b483ea4f4ce99f8c4d9d44c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/deprecations": "^1.1.5",
+                "php": "^8.2",
+                "psr/cache": "^1|^2|^3",
+                "psr/log": "^1|^2|^3"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "14.0.0",
+                "fig/log-test": "^1",
+                "jetbrains/phpstorm-stubs": "2023.2",
+                "phpstan/phpstan": "2.1.30",
+                "phpstan/phpstan-phpunit": "2.0.7",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "11.5.23",
+                "slevomat/coding-standard": "8.24.0",
+                "squizlabs/php_codesniffer": "4.0.0",
+                "symfony/cache": "^6.3.8|^7.0|^8.0",
+                "symfony/console": "^5.4|^6.3|^7.0|^8.0"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
+<<<<<<< HEAD
             "bin": [
                 "bin/doctrine-dbal"
             ],
+=======
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -265,7 +326,11 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/dbal/tree/3.10.4"
+=======
+                "source": "https://github.com/doctrine/dbal/tree/4.4.1"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "funding": [
                 {
@@ -281,7 +346,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-11-29T10:46:08+00:00"
+=======
+            "time": "2025-12-04T10:11:03+00:00"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
         },
         {
             "name": "doctrine/deprecations",
@@ -333,6 +402,7 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
+<<<<<<< HEAD
             "version": "2.18.2",
             "source": {
                 "type": "git",
@@ -390,6 +460,59 @@
                 "symfony/web-profiler-bundle": "^6.4 || ^7.0",
                 "symfony/yaml": "^6.4 || ^7.0",
                 "twig/twig": "^2.14.7 || ^3.0.4"
+=======
+            "version": "3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineBundle.git",
+                "reference": "af84173db6978c3d2688ea3bcf3a91720b0704ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/af84173db6978c3d2688ea3bcf3a91720b0704ce",
+                "reference": "af84173db6978c3d2688ea3bcf3a91720b0704ce",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^4.0",
+                "doctrine/deprecations": "^1.0",
+                "doctrine/persistence": "^4",
+                "doctrine/sql-formatter": "^1.0.1",
+                "php": "^8.4",
+                "symfony/cache": "^6.4 || ^7.0 || ^8.0",
+                "symfony/config": "^6.4 || ^7.0 || ^8.0",
+                "symfony/console": "^6.4 || ^7.0 || ^8.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0 || ^8.0",
+                "symfony/doctrine-bridge": "^6.4.3 || ^7.0.3 || ^8.0",
+                "symfony/framework-bundle": "^6.4 || ^7.0 || ^8.0",
+                "symfony/service-contracts": "^3"
+            },
+            "conflict": {
+                "doctrine/orm": "<3.0 || >=4.0",
+                "twig/twig": "<3.0.4"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^14",
+                "doctrine/orm": "^3.4.4",
+                "phpstan/phpstan": "2.1.1",
+                "phpstan/phpstan-phpunit": "2.0.3",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpstan/phpstan-symfony": "^2.0",
+                "phpunit/phpunit": "^12.3.10",
+                "psr/log": "^3.0",
+                "symfony/doctrine-messenger": "^6.4 || ^7.0 || ^8.0",
+                "symfony/expression-language": "^6.4 || ^7.0 || ^8.0",
+                "symfony/messenger": "^6.4 || ^7.0 || ^8.0",
+                "symfony/property-info": "^6.4 || ^7.0 || ^8.0",
+                "symfony/security-bundle": "^6.4 || ^7.0 || ^8.0",
+                "symfony/stopwatch": "^6.4 || ^7.0 || ^8.0",
+                "symfony/string": "^6.4 || ^7.0 || ^8.0",
+                "symfony/twig-bridge": "^6.4 || ^7.0 || ^8.0",
+                "symfony/validator": "^6.4 || ^7.0 || ^8.0",
+                "symfony/web-profiler-bundle": "^6.4 || ^7.0 || ^8.0",
+                "symfony/yaml": "^6.4 || ^7.0 || ^8.0",
+                "twig/twig": "^3.21.1"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
@@ -434,7 +557,11 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/DoctrineBundle/tree/2.18.2"
+=======
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/3.2.2"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "funding": [
                 {
@@ -450,6 +577,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-12-20T21:35:32+00:00"
         },
         {
@@ -485,6 +613,50 @@
                 "phpunit/phpunit": "^8.5 || ^9.5",
                 "symfony/phpunit-bridge": "^6.3 || ^7 || ^8",
                 "symfony/var-exporter": "^5.4 || ^6 || ^7 || ^8"
+=======
+            "time": "2025-12-24T12:24:29+00:00"
+        },
+        {
+            "name": "doctrine/doctrine-migrations-bundle",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
+                "reference": "20505da78735744fb4a42a3bb9a416b345ad6f7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/20505da78735744fb4a42a3bb9a416b345ad6f7c",
+                "reference": "20505da78735744fb4a42a3bb9a416b345ad6f7c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^4",
+                "doctrine/doctrine-bundle": "^3",
+                "doctrine/migrations": "^3.2",
+                "php": "^8.4",
+                "psr/log": "^3",
+                "symfony/config": "^6.4 || ^7.0 || ^8.0",
+                "symfony/console": "^6.4 || ^7.0 || ^8.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0 || ^8.0",
+                "symfony/deprecation-contracts": "^3",
+                "symfony/framework-bundle": "^6.4 || ^7.0 || ^8.0",
+                "symfony/http-foundation": "^6.4 || ^7.0 || ^8.0",
+                "symfony/http-kernel": "^6.4 || ^7.0 || ^8.0",
+                "symfony/service-contracts": "^3.0"
+            },
+            "require-dev": {
+                "composer/semver": "^3.0",
+                "doctrine/coding-standard": "^14",
+                "doctrine/orm": "^3",
+                "phpstan/phpstan": "^2",
+                "phpstan/phpstan-deprecation-rules": "^2",
+                "phpstan/phpstan-phpunit": "^2",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpstan/phpstan-symfony": "^2",
+                "phpunit/phpunit": "^12.5",
+                "symfony/var-exporter": "^6.4 || ^7 || ^8"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -519,7 +691,11 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineMigrationsBundle/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/3.7.0"
+=======
+                "source": "https://github.com/doctrine/DoctrineMigrationsBundle/tree/4.0.0"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "funding": [
                 {
@@ -535,7 +711,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-11-15T19:02:59+00:00"
+=======
+            "time": "2025-12-05T08:14:38+00:00"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
         },
         {
             "name": "doctrine/event-manager",
@@ -1731,6 +1911,7 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
+<<<<<<< HEAD
             "version": "5.6.6",
             "source": {
                 "type": "git",
@@ -1741,6 +1922,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/5cee1d3dfc2d2aa6599834520911d246f656bcb8",
                 "reference": "5cee1d3dfc2d2aa6599834520911d246f656bcb8",
+=======
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "02600c041e7d0f4b7d1fe1d260565ec525472fa9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/02600c041e7d0f4b7d1fe1d260565ec525472fa9",
+                "reference": "02600c041e7d0f4b7d1fe1d260565ec525472fa9",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 "shasum": ""
             },
             "require": {
@@ -1748,8 +1941,13 @@
                 "ext-filter": "*",
                 "php": "^7.4 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.2",
+<<<<<<< HEAD
                 "phpdocumentor/type-resolver": "^1.7",
                 "phpstan/phpdoc-parser": "^1.7|^2.0",
+=======
+                "phpdocumentor/type-resolver": "^2.0",
+                "phpstan/phpdoc-parser": "^2.0",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 "webmozart/assert": "^1.9.1 || ^2"
             },
             "require-dev": {
@@ -1759,7 +1957,12 @@
                 "phpstan/phpstan-mockery": "^1.1",
                 "phpstan/phpstan-webmozart-assert": "^1.2",
                 "phpunit/phpunit": "^9.5",
+<<<<<<< HEAD
                 "psalm/phar": "^5.26"
+=======
+                "psalm/phar": "^5.26",
+                "shipmonk/dead-code-detector": "^0.5.1"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "type": "library",
             "extra": {
@@ -1789,6 +1992,7 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.6"
             },
             "time": "2025-12-22T21:13:58+00:00"
@@ -1805,28 +2009,65 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/92a98ada2b93d9b201a613cb5a33584dde25f195",
                 "reference": "92a98ada2b93d9b201a613cb5a33584dde25f195",
+=======
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/6.0.0"
+            },
+            "time": "2026-01-07T20:22:53+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "327a05bbee54120d4786a0dc67aad30226ad4cf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/327a05bbee54120d4786a0dc67aad30226ad4cf9",
+                "reference": "327a05bbee54120d4786a0dc67aad30226ad4cf9",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 "shasum": ""
             },
             "require": {
                 "doctrine/deprecations": "^1.0",
+<<<<<<< HEAD
                 "php": "^7.3 || ^8.0",
                 "phpdocumentor/reflection-common": "^2.0",
                 "phpstan/phpdoc-parser": "^1.18|^2.0"
+=======
+                "php": "^7.4 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0",
+                "phpstan/phpdoc-parser": "^2.0"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "require-dev": {
                 "ext-tokenizer": "*",
                 "phpbench/phpbench": "^1.2",
+<<<<<<< HEAD
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^1.8",
                 "phpstan/phpstan-phpunit": "^1.1",
                 "phpunit/phpunit": "^9.5",
                 "rector/rector": "^0.13.9",
                 "vimeo/psalm": "^4.25"
+=======
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.5",
+                "psalm/phar": "^4"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-1.x": "1.x-dev"
+=======
+                    "dev-1.x": "1.x-dev",
+                    "dev-2.x": "2.x-dev"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 }
             },
             "autoload": {
@@ -1847,9 +2088,15 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.12.0"
             },
             "time": "2025-11-21T15:09:14+00:00"
+=======
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/2.0.0"
+            },
+            "time": "2026-01-06T21:53:42+00:00"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -9864,6 +10111,7 @@
         },
         {
             "name": "webmozart/assert",
+<<<<<<< HEAD
             "version": "2.0.0",
             "source": {
                 "type": "git",
@@ -9874,6 +10122,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozarts/assert/zipball/1b34b004e35a164bc5bb6ebd33c844b2d8069a54",
                 "reference": "1b34b004e35a164bc5bb6ebd33c844b2d8069a54",
+=======
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "bdbabc199a7ba9965484e4725d66170e5711323b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bdbabc199a7ba9965484e4725d66170e5711323b",
+                "reference": "bdbabc199a7ba9965484e4725d66170e5711323b",
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
                 "shasum": ""
             },
             "require": {
@@ -9920,9 +10180,15 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/webmozarts/assert/tree/2.0.0"
             },
             "time": "2025-12-16T21:36:00+00:00"
+=======
+                "source": "https://github.com/webmozarts/assert/tree/2.1.1"
+            },
+            "time": "2026-01-08T11:28:40+00:00"
+>>>>>>> 52c1037 (Initialisation du projet Symfony 6.4)
         }
     ],
     "packages-dev": [],
