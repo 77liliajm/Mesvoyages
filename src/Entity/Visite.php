@@ -29,12 +29,6 @@ class Visite
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $avis = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $tempmin = null;
-
-    #[ORM\Column(nullable: true)]
-    private ?int $tempmax = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -96,30 +90,6 @@ class Visite
     public function setAvis(?string $avis): static
     {
         $this->avis = $avis;
-
-        return $this;
-    }
-
-    public function getTempmin(): ?int
-    {
-        return $this->tempmin;
-    }
-
-    public function setTempmin(?int $tempmin): static
-    {
-        $this->tempmin = $tempmin;
-
-        return $this;
-    }
-
-    public function getTempmax(): ?int
-    {
-        return $this->tempmax;
-    }
-
-    public function setTempmax(?int $tempmax): static
-    {
-        $this->tempmax = $tempmax;
 
         return $this;
     }
