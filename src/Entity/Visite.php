@@ -5,10 +5,25 @@ namespace App\Entity;
 use App\Repository\VisiteRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
 
+#[Vich\Uploadable]
 #[ORM\Entity(repositoryClass: VisiteRepository::class)]
 class Visite
 {
+    #[Vich\UploadableField(mapping: 'visites', fileNameProperty: 'imageName', size: 'imageSize')]
+    private ?File $imageFile = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?string $imageName = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?int $imageSize = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $updatedAt = null;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
