@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Voyages{% endblock %}
+
+{% block body %}
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <h1>Liste de mes voyages</h1>
+    
+    {% if visites is empty %}
+        <p>Aucune visite pour le moment.</p>
+    {% else %}
+        <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Ville</th>
+                    <th>Pays</th>
+                    <th>Date</th>
+                    <th>Note</th>
+                    <th>Temp Min</th>
+                    <th>Temp Max</th>
+                    <th>Avis</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for visite in visites %}
+                    <tr>
+                        <td>{{ visite.ville }}</td>
+                        <td>{{ visite.pays }}</td>
+                        <td>{{ visite.datecreation ? visite.datecreation|date('d/m/Y') : 'Non renseignée' }}</td>
+                        <td>{{ visite.note ?? 'N/A' }}</td>
+                        <td>{{ visite.tempmin ?? 'N/A' }}°C</td>
+                        <td>{{ visite.tempmax ?? 'N/A' }}°C</td>
+                        <td>{{ visite.avis ?? 'Pas d\'avis' }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+</div>
+{% endblock %}
