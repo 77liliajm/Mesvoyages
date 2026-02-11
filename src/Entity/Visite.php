@@ -50,6 +50,45 @@ class Visite
     #[ORM\Column(nullable: true)]
     private ?int $tempmax = null;
 
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    public function setImageFile(?File $imageFile = null): self
+    {
+    $this->imageFile = $imageFile;
+
+    if (null !== $imageFile) {
+        $this->updatedAt = new \DateTimeImmutable();
+    }
+
+    return $this;
+    }   
+
+
+    public function getImageName(): ?string
+    {
+        return $this->imageName;
+    }
+
+    public function setImageName(?string $imageName): self
+    {
+        $this->imageName = $imageName;
+        return $this;
+    }
+
+    public function getImageSize(): ?int
+    {
+        return $this->imageSize;
+    }
+
+    public function setImageSize(?int $imageSize): self
+    {
+        $this->imageSize = $imageSize;
+        return $this;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -63,7 +102,6 @@ class Visite
     public function setVille(string $ville): static
     {
         $this->ville = $ville;
-
         return $this;
     }
 
@@ -75,7 +113,6 @@ class Visite
     public function setPays(string $pays): static
     {
         $this->pays = $pays;
-
         return $this;
     }
 
@@ -87,7 +124,6 @@ class Visite
     public function setDatecreation(?\DateTime $datecreation): static
     {
         $this->datecreation = $datecreation;
-
         return $this;
     }
 
@@ -99,7 +135,6 @@ class Visite
     public function setNote(?int $note): static
     {
         $this->note = $note;
-
         return $this;
     }
 
@@ -111,7 +146,6 @@ class Visite
     public function setAvis(?string $avis): static
     {
         $this->avis = $avis;
-
         return $this;
     }
 
@@ -123,7 +157,6 @@ class Visite
     public function setTempmin(?int $tempmin): static
     {
         $this->tempmin = $tempmin;
-
         return $this;
     }
 
@@ -135,7 +168,6 @@ class Visite
     public function setTempmax(?int $tempmax): static
     {
         $this->tempmax = $tempmax;
-
         return $this;
     }
 }
