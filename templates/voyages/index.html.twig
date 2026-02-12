@@ -24,7 +24,7 @@
             <tbody>
                 {% for visite in visites %}
                     <tr>
-                        <td>{{ visite.ville }}</td>
+                        <td>;{{ visite.ville }}</td>
                         <td>{{ visite.pays }}</td>
                         <td>{{ visite.datecreation ? visite.datecreation|date('d/m/Y') : 'Non renseignée' }}</td>
                         <td>{{ visite.note ?? 'N/A' }}</td>

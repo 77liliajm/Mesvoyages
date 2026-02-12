@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ visite.ville }} - {{ visite.pays }}{% endblock %}
+
+{% block body %}
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <h1>{{ visite.ville }} - {{ visite.pays }}</h1>
+
+    {% if visite.imageName %}
+        <div>
+            <img src="{{ app.request.getBasePath ~ vich_uploader_asset(visite, 'imageFile') }}"
+                 alt="{{ visite.ville }}" class="img-fluid" style="width: 100%; height: auto;">
+        </div>
+    {% endif %}
+
+    <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <th>Date</th>
+            <td>{{ visite.datecreation ? visite.datecreation|date('d/m/Y') : 'Non renseignée' }}</td>
+        </tr>
+        <tr>
+            <th>Note</th>
+            <td>{{ visite.note ?? 'N/A' }}</td>
+        </tr>
+        <tr>
+            <th>Température min</th>
+            <td>{{ visite.tempmin ?? 'N/A' }}°C</td>
+        </tr>
+        <tr>
+            <th>Température max</th>
+            <td>{{ visite.tempmax ?? 'N/A' }}°C</td>
+        </tr>
+        <tr>
+            <th>Avis</th>
+            <td>{{ visite.avis ?? 'Pas d\'avis' }}</td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="{{ path('app_voyages') }}">← Retour à la liste</a>
+</div>
+{% endblock %}
